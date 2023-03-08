@@ -14,8 +14,10 @@ class Stack {
   }
 
   pop() {
+    if (this.top < 0) return;
+
     delete this.items[this.top];
-    this.top -= 1;
+    this.top--;
   }
 }
 
